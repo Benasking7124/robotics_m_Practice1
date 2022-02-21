@@ -138,6 +138,7 @@ include_directories(
 add_executable(number_pub src/number_pub.cpp)
 add_executable(number_sum src/number_sum.cpp)
 add_executable(turtle_more src/turtle_more.cpp)
+add_executable(turtle_control src/turtle_control.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -160,6 +161,9 @@ target_link_libraries(number_sum
   ${catkin_LIBRARIES}
 )
 target_link_libraries(turtle_more
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(turtle_control
   ${catkin_LIBRARIES}
 )
 

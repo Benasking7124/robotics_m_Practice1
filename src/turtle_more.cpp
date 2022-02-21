@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 	ros::init(argc, argv, "spawnturtles");
 	ros::NodeHandle node_handle;
 
-//	ros::service::waitForService("turtlesim/Spawn");
+	ros::service::waitForService("spawn");
 
 	//delete original turtle
 	ros::ServiceClient client_kill = node_handle.serviceClient<turtlesim::Kill>("kill");
